@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Poppins:ital,wght@1,900&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 375px;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%); /*Pale blue*/
+  padding: 14px;
+  font-size: 16px;
+}
+.container {
+  background-color: white;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+.fleximg {
+  font-size: 10px;
+  flex: 0 0 auto;
+}
+.card img {
+  width: 100%;
+}
+.innercontainer {
+  border-radius: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 2em;
+}
+h2 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+p {
+  text-align: center;
+  color: hsl(224deg 9.53% 55.61%);
+  margin-bottom: 24px;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
+}
+.plan_amt h4 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%); /*Dark blue*/
+  align-items: center;
+  margin-bottom: 2px;
+}
+.plan_amt span {
+  color: hsl(224deg 9.53% 55.61%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.plan_amt {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  margin-right: 18px;
+  justify-content: space-between;
+}
+.flexbox {
+  display: flex;
+  background-color: hsl(225, 100%, 98%); /*Very pale blue*/
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 18px;
+  flex-wrap: wrap;
+}
+
+.plan_amt span {
+  margin-right: 12px;
+}
+
+a.Proceed-to-Payment {
+  background-color: hsl(245, 75%, 52%); /*Bright blue*/
+  color: white;
+  display: block;
+  padding: 16px 0;
+  border-radius: 12px;
+  margin: 24px 0;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+a.Cancel-Order {
+  text-align: center;
+  color: hsl(224, 23%, 55%); /* Desaturated blue*/
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.flexbox a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 14px;
+}
+.flexbox a:hover {
+  text-decoration: none;
+}
+a.Proceed-to-Payment:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+a.Cancel-Order:hover {
+  color: hsl(223, 47%, 23%);
+}
+@media only screen and (min-width: 425px) {
+  .container {
+    width: 425px;
+  }
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
